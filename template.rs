@@ -9,8 +9,8 @@ fn main() {
     let (stdin, stdout) = (io::stdin(), io::stdout());
     let mut sc = Scanner::new(stdin.lock()); let mut out = io::BufWriter::new(stdout.lock());
 
-    let g: u32 = sc.token::<u32>();
-    for _ in 0..g {
+    let t: u32 = sc.token::<u32>();
+    for _ in 0..t {
 
     }
 }
