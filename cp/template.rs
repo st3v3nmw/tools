@@ -8,9 +8,10 @@ impl<R: BufRead> Scanner<R> { fn new(reader: R) -> Self { Self { reader, buf_str
 fn main() {
     let (stdin, stdout) = (io::stdin(), io::stdout());
     let mut sc = Scanner::new(stdin.lock()); let mut out = io::BufWriter::new(stdout.lock());
+    #[macro_export] macro_rules! cin { ($dt:ty) => (sc.token::<$dt>()); ($dt:ty, $n:expr) => { { let mut arr: [$dt; $n] = [0; $n]; for i in 0..$n { arr[i] = sc.token::<$dt>(); } arr } }; }
 
-    let t = sc.token::<u32>();
+    let t = cin!(u32);
     for _ in 0..t {
-
+        dbg!(t);
     }
 }
