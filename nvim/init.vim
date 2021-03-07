@@ -12,6 +12,8 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'vim-airline/vim-airline'
 Plug 'sheerun/vim-polyglot'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'preservim/tagbar'
+Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 set tabstop=4
@@ -53,5 +55,4 @@ inoremap <C-s> <ESC>:w<CR>a
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
-50vs
-terminal
+call tagbar#ToggleWindow()

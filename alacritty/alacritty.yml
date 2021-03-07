@@ -1,7 +1,5 @@
-title: Alacrittys
-
 window:
-  dynamic_title: false
+  dynamic_title: true
   startup_mode: Maximized
   decorations: full
 
@@ -11,6 +9,9 @@ shell:
 scrolling:
   history: 1024
   multiplier: 3
+
+font:
+  size: 10
 
 # Colors (Dracula)
 colors:
