@@ -1,17 +1,23 @@
 window:
-  dynamic_title: true
+  dynamic_title: false
   startup_mode: Maximized
   decorations: full
 
 shell:
-  program: /bin/fish
+  program: /bin/zsh
+  args:
+    - -l
+    - -c
+    - "tmux attach || tmux"
   
 scrolling:
   history: 1024
   multiplier: 3
 
+# Font configuration (changes require restart)
 font:
   size: 10
+  # Normal (roman) font face
 
 # Colors (Dracula)
 colors:
